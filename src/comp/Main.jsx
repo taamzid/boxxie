@@ -10,11 +10,16 @@ const Main = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    const templateParams = {
+      from_name: email, // Make sure this matches the variable in your Email.js template
+      email: email, // This could be another field, depending on how your template is set up
+    };
+
     emailjs
       .send(
         "service_jcu2aza", // Your service ID
         "template_e2jgjej", // Your template ID
-        { email: email }, // Email data
+        templateParams, // Email data
         "WcNfDbngJgyC1pjN-" // Your API key
       )
       .then(
@@ -54,9 +59,9 @@ const Main = () => {
           </h1>
           <div className="flex items-center justify-center mt-[24px]">
             <input
-              type="email"
+              type="text"
               placeholder="Email"
-              value={email}
+              value={email} // Make sure to bind the input's value to the state
               name="from_name"
               onChange={(e) => setEmail(e.target.value)}
               className="px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none w-[770px] h-[48px] font-poppins font-normal"
