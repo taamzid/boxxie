@@ -1,26 +1,28 @@
 import bike from "../assets/bikeN.svg";
+import bikeM from "../assets/bikeM.svg";
 import socials from "../assets/Socials.svg";
 const Main = () => {
   return (
-    <div className="bg-coming-soon bg-cover bg-center h-[1024px]">
+    <div className="bg-bg-mobile md:bg-coming-soon bg-cover bg-center md:h-[1024px]">
       <section>
-        <h1 className="font-poppins font-bold text-[64px] text-[#FF5F00] flex items-center justify-center pt-[150px]">
+        <h1 className="font-poppins font-bold text-[56px] md:text-[64px] text-[#FF5F00] flex items-center justify-center pt-[86px] md:pt-[150px]">
           Boxxie
         </h1>
-        <h1 className="font-poppins font-medium text-[32px] pb-2">
+        <h1 className="font-poppins font-medium text-[28px] md:text-[32px] pb-2">
           WE ARE COMING SOON!!
         </h1>
         <p className="font-poppins font-normal tracking-wider text-[16px] text-[#828282]">
           Stay tuned for something amazing
         </p>
         <div className="flex items-center justify-center mt-[12px]">
-          <img src={bike} alt="" />
+          <img src={bike} alt="" className="hidden md:flex" />
+          <img src={bikeM} alt="" className="md:hidden mt-[70px]" />
         </div>
       </section>
 
       <section>
-        <div>
-          <h1 className="font-poppins font-normal tracking-[0.2px] mt-[80px] mr-[460px] text-[20px]">
+        <div className="px-[16px] md:px-[0px]">
+          <h1 className=" text-start md:text-center font-poppins font-normal tracking-[0.2px] mt-[80px] md:mr-[460px] text-[18px] md:text-[20px]">
             Subscribe to our mailing list to get latest updates
           </h1>
           <div className="flex items-center justify-center mt-[24px]">
@@ -37,7 +39,7 @@ const Main = () => {
             <div className="flex items-center justify-center mt-[40px] cursor-pointer">
               <img src={socials} alt="" />
             </div>
-            <h1 className="mt-[50px] text-[#828282] font-poppins font-normal tracking-[0.2px]">
+            <h1 className="mt-[50px] text-[#828282] font-poppins font-normal tracking-[0.2px] pb-[120px] md:pb-[0px]">
               © Copyrights Greelogix | All Rights Reserved
             </h1>
           </div>
