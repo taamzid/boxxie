@@ -2,7 +2,7 @@ import emailjs from "emailjs-com";
 import React, { useState } from "react";
 import bikeM from "../assets/bikeM.svg";
 import bike from "../assets/bikeN.svg";
-import socials from "../assets/Socials.svg";
+import socials from "../assets/Social-Icons.svg";
 
 const Main = () => {
   const [email, setEmail] = useState("");
@@ -78,7 +78,7 @@ const Main = () => {
               <img src={socials} alt="" />
             </div>
             <h1 className="mt-[50px] text-[#828282] font-poppins font-normal tracking-[0.2px] pb-[120px] md:pb-[0px]">
-              © Copyrights Greelogix | All Rights Reserved
+              © Copyrights Boxxie | All Rights Reserved
             </h1>
           </div>
         </div>
